@@ -7,11 +7,17 @@
     font-family: "Lexend", sans-serif;
 }
 
+
+main {
+    display: flex;
+}
+
 .login {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 500px;
+    justify-content: space-between;
     width: 100%;
     min-height: 100vh;
     padding: clamp(35px, 8%, 70px);
@@ -26,6 +32,15 @@
     color: #343434;
     font-size: 24px;
     margin-bottom: 30px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .login-label {
@@ -65,4 +80,124 @@
 .login-label .span-active {
     font-size: 10px;
     margin: 8px 10px;
+}
+
+.login-icons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login-icons i {
+    width: 50px;
+    font-size: 25px;
+}
+
+.icon-button {
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.icon-button:nth-child(1){
+    background: rgb(240, 240, 236);
+    color: rgb(252, 29, 29);
+}
+
+.icon-button:nth-child(2){
+    color: white;
+    background: blue;
+}
+
+
+.apple {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+.login-checkbox {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.input-checkbox {
+    appearance: none;
+    width: 19px;
+    height: 18px;
+    background-color: rgb(236, 234, 234);
+    margin-right: 7px;
+    border-radius: 3px;
+}
+
+.input-checkbox:checked {
+    background-color: red;
+}
+
+.input-checkbox:checked::after {
+   content: '';
+   display: block;
+   width: 5px;
+   height: 10px;
+   border: 3px solid rgb(252, 252, 252);
+   margin: 100px;
+   border-width: 0 3px 3px 0;
+   transform: rotate(45deg);
+   margin: 0 6px;
+}
+
+.login-button {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+.login-button i {
+    font-size: 28px;
+    padding-right: 5px;
+    color: white;
+}
+
+.login-button:disabled {
+    cursor: auto;
+    background-color: white;
+    border: 2px solid rgb(224, 224, 224);
+}
+
+.login-button:disabled i {
+    color: grey;
+}
+
+.login-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(173, 173, 173);
+    margin-bottom: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.wallpaper {
+    width: 100%;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/c15cd75fbe2b888a473bf467e6ceb7f3\ \(1\).jpg);
 }

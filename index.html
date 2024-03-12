@@ -4,22 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>League of Legends</title>
 </head>
 <body>
     
     <main>
         <section class="login">
-            <img src="img/riot-games2233.jpg" alt="RiotGamesLogo" class="login-logo">
-            <h1 class="login-title">Fazer Login</h1>
-            <label  class="login-label">
-                <span>nome do usuário</span>
-                <input type="text" name="username" class="input">
-            </label>
-            <label  class="login-label">
-                <span>Senha</span>
-                <input type="password" name="password" class="input">
-            </label>
+
+            <div class="wrapper">
+
+                <img src="img/riot-games2233.jpg" alt="RiotGamesLogo" class="login-logo">
+                <h1 class="login-title">Fazer Login</h1>
+                <label  class="login-label">
+                    <span>nome do usuário</span>
+                    <input type="text" name="username" class="input">
+                </label>
+                <label  class="login-label">
+                    <span>Senha</span>
+                    <input type="password" name="password" class="input">
+                </label>
+                <div class="login-icons">
+                 <button type="button" class="icon-button google">
+                    <i class='bx bxl-google'></i>
+                 </button>
+                 <button type="button" class="icon-button facebook">
+                    <i class='bx bxl-facebook-circle' ></i>
+                 </button>
+                 <button type="button" class="icon-button apple">
+                    <i class='bx bxl-apple' ></i>
+                 </button>
+                </div>
+    
+                <label class="login-checkbox">
+                    <input type="checkbox" class="input-checkbox">
+                    Manter login
+                </label>
+            </div>
+
+            <div class="wrapper">
+
+                <button type="button" class="login-button" disabled>
+                 <i class='bx bx-log-in'></i>
+                </button>
+               
+                <a href="#" class="login-link">não consegue iniciar sessão?</a>
+                <a href="#" class="login-link">criar conta</a>
+            </div>
+        </section>
+
+        <section class="wallpaper">
+            
         </section>
     </main>
 
